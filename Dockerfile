@@ -43,7 +43,6 @@ FROM debian:sid-slim
 WORKDIR /root
 
 COPY --from=builder /root/atom/out/*.deb .
-RUN ls -l && pwd
 RUN apt-get update && apt-get install -y \
   git \
   libgconf-2-4 \
