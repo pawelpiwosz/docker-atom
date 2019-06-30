@@ -10,6 +10,6 @@ Run:
 docker run --rm -it \
   -v /dev/shm:/dev/shm \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
-  -v /home/user-name/your-work-dir/:/docker-work-dir
+  -v /home/user-name/your-work-dir/:/docker-work-dir \
   -e DISPLAY=$DISPLAY \
   atom
